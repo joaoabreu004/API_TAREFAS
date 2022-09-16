@@ -34,6 +34,6 @@ async function bootstrap() {
   // Permitir que outros domínios consumam nossa API.
   app.enableCors();
 
-  await app.listen(3000);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
